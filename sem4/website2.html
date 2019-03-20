@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Layout Task</title>
+  <link href="styles2.css" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<div class="bg">
+<div class="header">
+    <div class="header-container">
+        <div class = "logo"><p>Perfect Place</p></div>
+        <nav>
+            <a href="">Acasa</a>
+            <a href="">Autentificare</a>
+            <a href="">Creare Cont</a>
+            <a href="">ADAUGA ANUNT</a>
+        </nav>
+    </div>
+</div>
+<div class="main-container">
+ 
+
+
+ <div class = "filter-bar">
+    <div class = "filtre">
+        <select name="tip-rezidenta">
+        <option value="toate">Toate</option>
+        <option value="apartament">Apartament</option>
+        <option value="casa">Casa</option>
+        <option value="teren">Teren</option>
+        </select>
+    
+        <select name="mod">
+        <option value="vanzare">Vanzare</option>
+        <option value="inchiriere">Inchiriere</option>
+        </select>
+    
+        <select name="zona">
+        <option value="canta">Canta</option>
+        <option value="pacurari">Pacurari</option>
+        </select>
+
+        <select name="pret">
+            <option value="20000">Pana in 20.000 Euro</option>
+            <option value="30000">Pana in 30.000 Euro</option>
+        </select>
+    </div>
+    
+    
+</div>
+
+ <div class="content">
+    <div class="card">
+            <div class = "left">
+                <p id="special">VANZARE</p>
+                <h3>Locuinta in complex Rezidential in zona de Nord</h3>
+                <p>Case-Vile | 97m | 4 camere</p>
+            </div>
+          
+            <div class = "right">
+                <p id = "price">86.000 EUR</p>
+                <p>Tunari, Bucuresti-Ilfov / Nord</p>
+            </div>
+          
+            <div class = "img-layout">
+                <figure class = "fig1"> <img  src = "images/balloon-sq1.jpg" /> </figure>
+                <figure class = "fig2">  <img src = "images/balloon-sq2.jpg" /> </figure>
+                <figure class = "fig3"> <img src = "images/balloon-sq3.jpg" /> </figure>
+            </div>
+
+            <div class = "detalii">
+                <div class = "info">
+                    <p>Zona</p>
+                    <p>Nord</p>
+                </div>
+                <div class = "info">
+                    <p>Suprafata teren</p>
+                    <p>215</p>
+                </div>
+                <div class = "info">
+                    <p>Numar camere</p>
+                    <p>4</p>
+                </div>
+                <div class = "info">
+                    <p>Numar bai</p>
+                    <p>2</p>
+                    </div>
+                <div class = "info">
+                        <p>Zona</p>
+                        <p>Nord</p>
+                </div> 
+
+            </div>
+            <p> 
+                Se propune spre vanzare ,cladire proiectata pentru azil de batrani,avand o amprenta la sol de 200MP,
+                cu o suprafata utila de 350 MP,constructia este din BCA la parter iar etajul este din lemn, suprafata de
+                teren pe care se afla constructia este de 2800 MP avand deschidere la strada de 50 ML,curent electric 220V,apa.
+                Proprietatea se afla situata in Tamboiesti ,acces usor,pret discutabil!
+            </p>
+    </div>
+    <div id="demoMap">
+            <div class = "filtre">
+                <ul>
+                    <li><a href="">Scoli</a></li>
+                    <li><a href="">Parcari</a></li>
+                    <li><a href="">Farmacii</a></li>
+                    <li><a href="">Magazine</a></li>
+                    <li><a href="">Spitale</a></li>
+                </ul>
+            </div>
+           <p>In zona selectata exista 10 scoli</p>
+    </div>
+ </div>
+
+ <p class="similar">Locuinte similare</p>
+
+ <div class="sugested">
+    <div class="card-sugested">
+        <div class="card-top">
+            <div class = "left">
+                    <p id="special">VANZARE</p>
+                    <h3>Locuinta in complex Rezidential in zona de Nord</h3>
+                    <p>Case-Vile | 97m | 4 camere</p>
+            </div>
+                
+            <div class = "right">
+                <p id = "price-small">86.000 EUR</p>
+                <p>Tunari, Bucuresti-Ilfov / Nord</p>
+            </div>
+        </div>
+        <div class="img"></div>
+    </div>
+
+    <div class="card-sugested">
+        <div class="card-top">
+            <div class = "left">
+                    <p id="special">VANZARE</p>
+                    <h3>Locuinta in complex Rezidential in zona de Nord</h3>
+                    <p>Case-Vile | 97m | 4 camere</p>
+            </div>
+                
+            <div class = "right">
+                <p id = "price-small">86.000 EUR</p>
+                <p>Tunari, Bucuresti-Ilfov / Nord</p>
+            </div>
+        </div>
+        <div class="img"></div>   
+    </div>
+
+    <div class="card-sugested">
+        <div class="card-top">
+            <div class = "left">
+                    <p id="special">VANZARE</p>
+                    <h3>Locuinta in complex Rezidential in zona de Nord</h3>
+                    <p>Case-Vile | 97m | 4 camere</p>
+            </div>
+                
+            <div class = "right">
+                <p id = "price-small">86.000 EUR</p>
+                <p>Tunari, Bucuresti-Ilfov / Nord</p>
+            </div>
+        </div>
+        <div class="img"></div>
+    </div>
+
+</div>
+</div>
+</div>
+<div class="footer">
+
+</div>
+
+
+<script src="OpenLayers.js"></script>
+<script>
+    map = new OpenLayers.Map("demoMap");
+    map.addLayer(new OpenLayers.Layer.OSM());
+    map.zoomToMaxExtent();
+    
+</script>
+</body>
+
+</html>
