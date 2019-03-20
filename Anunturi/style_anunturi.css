@@ -1,0 +1,337 @@
+*{
+  margin-top: 0%;
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-bottom: 0%;
+}
+a{
+  text-decoration: none;
+  color:black;
+}
+
+.header{
+  background-color: #E25D15;
+  height: 60px;
+  width:100%;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+ 
+}
+.header .header-container{
+  width:80%;
+  margin:auto;
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+.hero-image{
+  width:100%;
+  height: 170px;
+  background-image: url('../Home/5.jpg');
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-position: center;
+}
+
+
+
+.header .header-container .logo{
+  height: 60px;
+  width: 10%;
+
+  display: flex;
+  justify-content:center;
+  align-content:center;
+  flex-direction:column;
+
+ /*
+  background-image: url('images/logo.png');
+  background-repeat: no-repeat; 
+  background-size: contain; 
+  background-position: center;
+  */
+
+  background-color: #E25D15;
+}
+.header .header-container .logo p{
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+
+.header-container nav{
+  
+  margin-left: auto;
+  background-color: #E25D15;
+  display: flex;
+ /* flex-direction: column;*/
+  justify-content: space-between;
+  align-content: center;
+}
+
+.header-container nav a{
+  box-sizing:border-box;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  padding-left: 20px;
+  margin: auto;
+  color: white;
+}
+
+.header-container nav a:hover{
+
+  background-color:red;
+  color: white;
+}
+
+
+body {
+margin: 0px;
+}
+
+
+.container{
+
+height: 100%;
+}
+/* Style The Dropdown Button */
+.dropbtn {
+background-color: #4CAF50;
+color: white;
+padding: 22px;
+font-size: 16px;
+border: none;
+cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+background-color: #3e8e41;
+}
+
+.wrapper {
+display: grid;
+border: 3px dashed rgba(0, 0, 0, 0.35);
+height: 650px;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: auto;
+background: rgba(16, 47, 104, 0.05);
+justify-items: center;
+align-items: center;
+margin: 20px;
+}
+.box {
+width: 90%;
+height: 90%;
+background-color: rgb(154, 223, 223);
+border: 2px dashed rgba(0, 0, 0, 0.5);
+border-radius: 50px;
+
+}
+.box:hover {
+animation: nudge .4s linear;
+}
+
+.sugested{
+  display: flex;
+  
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+
+}
+
+.card-sugested{
+  width: 400px;
+  height: 350px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-right: 5px;
+  background-color:white;
+  margin-bottom: 50px;
+  transition: 0.5s;
+
+ 
+}
+
+.card-sugested:hover{
+  animation: nudge .4s linear;
+ width: 400px;
+ height: 350px;
+ box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2), 0 20px 60px 0 rgba(0, 0, 0, 0.2);
+ margin-right: 5px;
+ background-color:white;
+ margin-bottom: 50px;
+
+}
+
+.card-sugested .card-top{
+  height: 40%;
+  display:flex;
+}
+.card-sugested .card-top .left, .card-top .right{
+ margin-top: 10px;
+ margin-left: 10px;
+ font-size: 17px;
+}
+.card-sugested .img{
+
+ 
+ height: 180px;
+ background-image: url('ap1.jpg');
+ background-repeat: no-repeat; 
+ background-size: cover; 
+ background-position: center;
+ background-color: red;
+
+}
+
+
+
+
+.filter-bar {
+  width: 80%;
+  margin: auto;
+  margin-top:20px;
+  padding: 20px 0px 0px 0px;
+  margin-bottom: 20px;
+}
+
+
+.filter-bar .filtre select{
+margin: 0px 10px 0px 0px;
+padding: 15px;
+border: #E25D15 solid 1.5px;
+border-radius: 5px;
+background-color: white;
+width:100%;
+}
+
+select option{
+  background-color: #E25D15;
+  color: white;
+}
+
+.filter-bar > .filtre:first-child{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  
+}
+
+
+#demoMap .filtre{
+ 
+ padding-bottom: 10px;
+ width:50%;
+
+}
+.filter-bar .filtre ul, #demoMap .filtre ul{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.filter-bar .filtre ul li, #demoMap .filtre ul li{
+  list-style: none;
+  margin: auto;
+  background-color: white;
+  
+
+}
+
+
+.filter-bar .filtre ul a, #demoMap .filtre ul a{
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  background-color:white;
+  display: block;
+  text-decoration: none;
+  color: black;
+  border: solid 1px #E25D15;
+}
+
+.filter-bar .filtre ul a:hover, #demoMap .filtre ul a:hover{
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  background-color:#E25D15;;
+  display: block;
+  text-decoration: none;
+  color: white;
+
+}
+
+
+.footer{
+  /* margin-top: 50px;*/
+   width: 100%;
+   height: 300px;
+   background-color: black;
+}
+
+#price-small{
+  font-size: 1.6vw;
+  color: #E25D15;
+}
+
+#special{
+  padding: 5px;
+  background-color: #E25D15;
+  color: white;
+}
+
+
+
+@keyframes nudge {
+
+0% {
+  transform: rotate(-7deg);
+}
+
+33% {
+  transform: rotate(7deg);
+}
+
+66% {
+  transform: rotate(-7deg);
+}
+}

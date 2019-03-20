@@ -4,7 +4,10 @@
   margin-right: 0%;
   margin-bottom: 0%;
 }
-
+a{
+  text-decoration: none;
+  color: black;
+}
 .header{
     background-color: #E25D15;
     height: 60px;
@@ -72,6 +75,11 @@
     color: white;
 }
 /* search box  */
+input[type=text] {
+  padding: 10px 5px 5px 5px;
+  
+}
+
 /*
 .search {
   width: 100%;
@@ -96,8 +104,8 @@
 .searchButton {
 
   /* right: -50px; */
-  width: 14px;
-  height: 14px;
+  width: 20px;
+  height: 20px;
   border: 1px solid #E25D15;
   background-color: #E25D15;
   text-align: center;
