@@ -23,7 +23,7 @@
 <div class="main-container">
  
 
-
+ <button class="button" type="submit" onclick="myFunction()">Mareste harta</button>
  <div class = "filter-bar">
     <div class = "filtre">
         <select name="tip-rezidenta">
@@ -53,55 +53,59 @@
 </div>
 
  <div class="content">
-    <div class="card">
-            <div class = "left">
-                <p id="special">VANZARE</p>
-                <h3>Locuinta in complex Rezidential in zona de Nord</h3>
-                <p>Case-Vile | 97m | 4 camere</p>
-            </div>
-          
-            <div class = "right">
-                <p id = "price">86.000 EUR</p>
-                <p>Tunari, Bucuresti-Ilfov / Nord</p>
-            </div>
-          
-            <div class = "img-layout">
-                <figure class = "fig1"> <img  src = "images/balloon-sq1.jpg" /> </figure>
-                <figure class = "fig2">  <img src = "images/balloon-sq2.jpg" /> </figure>
-                <figure class = "fig3"> <img src = "images/balloon-sq3.jpg" /> </figure>
-            </div>
+    <div class="content-left">
+        <div class="card">
+                <div class = "left">
+                    <p id="special">VANZARE</p>
+                    <h3>Locuinta in complex Rezidential in zona de Nord</h3>
+                    <p>Case-Vile | 97m | 4 camere</p>
+                </div>
+            
+                <div class = "right">
+                    <p id = "price">86.000 EUR</p>
+                    <p>Tunari, Bucuresti-Ilfov / Nord</p>
+                </div>
+            
+                <div class = "img-layout">
+                    <figure class = "fig1"> <img  src = "images/balloon-sq1.jpg" /> </figure>
+                    <figure class = "fig2">  <img src = "images/balloon-sq2.jpg" /> </figure>
+                    <figure class = "fig3"> <img src = "images/balloon-sq3.jpg" /> </figure>
+                </div>
 
-            <div class = "detalii">
-                <div class = "info">
-                    <p>Zona</p>
-                    <p>Nord</p>
-                </div>
-                <div class = "info">
-                    <p>Suprafata teren</p>
-                    <p>215</p>
-                </div>
-                <div class = "info">
-                    <p>Numar camere</p>
-                    <p>4</p>
-                </div>
-                <div class = "info">
-                    <p>Numar bai</p>
-                    <p>2</p>
-                    </div>
-                <div class = "info">
+                <div class = "detalii">
+                    <div class = "info">
                         <p>Zona</p>
                         <p>Nord</p>
-                </div> 
+                    </div>
+                    <div class = "info">
+                        <p>Suprafata teren</p>
+                        <p>215</p>
+                    </div>
+                    <div class = "info">
+                        <p>Numar camere</p>
+                        <p>4</p>
+                    </div>
+                    <div class = "info">
+                        <p>Numar bai</p>
+                        <p>2</p>
+                        </div>
+                    <div class = "info">
+                            <p>Zona</p>
+                            <p>Nord</p>
+                    </div> 
 
-            </div>
-            <p> 
-                Se propune spre vanzare ,cladire proiectata pentru azil de batrani,avand o amprenta la sol de 200MP,
-                cu o suprafata utila de 350 MP,constructia este din BCA la parter iar etajul este din lemn, suprafata de
-                teren pe care se afla constructia este de 2800 MP avand deschidere la strada de 50 ML,curent electric 220V,apa.
-                Proprietatea se afla situata in Tamboiesti ,acces usor,pret discutabil!
-            </p>
+                </div>
+                <p> 
+                    Se propune spre vanzare ,cladire proiectata pentru azil de batrani,avand o amprenta la sol de 200MP,
+                    cu o suprafata utila de 350 MP,constructia este din BCA la parter iar etajul este din lemn, suprafata de
+                    teren pe care se afla constructia este de 2800 MP avand deschidere la strada de 50 ML,curent electric 220V,apa.
+                    Proprietatea se afla situata in Tamboiesti ,acces usor,pret discutabil!
+                </p>
+        </div>
+        <div class="contact"><div class="contact-wrap"> <p id="contact">Contact</p> <p>Numar telefon: 0712345678</p> <p>Oras: Iasi</p> <p>Salveaza anuntul</p> </div></div>
     </div>
-    <div id="demoMap">
+    <div id="content-right">
+        <div id="demoMap">
             <div class = "filtre">
                 <ul>
                     <li><a href="">Scoli</a></li>
@@ -111,9 +115,13 @@
                     <li><a href="">Spitale</a></li>
                 </ul>
             </div>
-           <p>In zona selectata exista 10 scoli</p>
+            <p>In zona selectata exista 10 scoli</p>
+        </div>
+        
     </div>
  </div>
+
+
 
  <p class="similar">Locuinte similare</p>
 
@@ -220,6 +228,15 @@
     map = new OpenLayers.Map("demoMap");
     map.addLayer(new OpenLayers.Layer.OSM());
     map.zoomToMaxExtent();
+
+    function myFunction(){
+        if(document.getElementById("content-right").style.width == "100%"){
+            document.getElementById("content-right").style.width = "50%";
+        }else{
+            document.getElementById("content-right").style.width = "100%";
+        }
+
+    }
     
 </script>
 </body>
