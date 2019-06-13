@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+*{
+  margin:0px;
+  padding: 0px;
+}
+
+/* Navbar */
+.navbar-container{
+  background-color: white;
+  width: 100%;
+  height: 90px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  top: 0px;
+  
+  
+}
+
+.navbar{
+  margin: 0px auto;
+  width: 85%;
+  height: 100%;
+  
+  color: #525152;
+
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.logo{
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
+  /* identical to box height */
+  letter-spacing: 0.11em;
+
+  color: #5A416B;
+}
+
+.meniu{
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+}
+
+.meniu a{
+
+  text-decoration: none;
+
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #525152;
+  padding: 10px;
+}
+
+.meniu .selected{
+
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #FFE999;
+
+  background: #9D56E3;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+.page-container{
+  background: linear-gradient(180deg, rgba(90, 65, 107, 0.728) 0%, rgba(28, 17, 35, 0.728) 100%), url(images/bg.jpg);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  height: calc(100vh - 90px); /* You must set a specified height */
+}
+
+.content{
+  width: 80%;
+  height: 70%;
+  margin: 0px auto;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+
+}
+
+/* E timpul sa te muti? */
+.content h1{
+
+  font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 56px;
+text-align: center;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Aici gasesti peste 200.000 de anunturi imobiliare */
+.content h3{
+
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* search */
+.search-container{
+ width: 800px;
+ height: 45px;
+
+
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0px auto;
+  position: relative;
+}
+
+#result{
+ display : none;
+  visibility : invisible;
+
+  position: absolute;
+  top: 36px;
+  height: 200px;
+  width: calc(80% - 6px);
+  background-color: white;
+  padding-left: 8px;
+  /* box-sizing: border-box; */
+  overflow: auto;
+}
+
+#result a{
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+
+  text-decoration: none;
+  width: 100%;
+  padding: 3px;
+  
+  color: #525152;
+}
+
+#result a:hover{
+ 
+  background-color: grey;
+  color: white;
+}
+
+.search-container #search-bar{
+  background: #FFFFFF;
+  width: 80%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+
+  border: none;
+  text-decoration: none;
+
+  
+  padding-left: 8px;
+}
+
+.search-container input[type="submit"]{
+
+  width: 20%;
+  height: 100%;
+
+  background: #9D56E3;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 0px 10px 10px 0px;
+
+  border: none;
+  text-decoration: none;
+  text-align: center;
+
+
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #FFE999;
+
+  z-index: 100;
+}
+
+/* Group */
+
+.card-container{
+  margin: 0px auto;
+  display:flex;
+  justify-content: space-between;
+  width: 800px;
+}
+
+.card{
+
+  width: 240px;
+  height: 240px;
+
+  background: #FFFFFF;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.18);
+  border-radius: 20px;
+
+  text-align: center;
+}
+
+/* Tot ce trebuie sa stii despre noua ta locuinta */
+
+.card p{
+  margin: 0px auto;
+  margin-top: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+
+  color: #383838;
+
+  width: 90%;
+  
+}
+
+
+.card img{
+  margin-top: 30px;
+  width: 120px;
+}
+
+
