@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Raport Perfect Place</title>
+</head>
+<body>
+
+
+    <section typeof="project">      
+        <h1>Raport Perfect Place</h1>
+
+        <section typeof="sa:AuthorsList">
+            <h2>Autori</h2>
+            <ul>
+            <li typeof="sa:ContributorRole" property="schema:author">
+                <span property="schema:name">Bîrzu Alexandra</span>
+                <ul>
+                <li property="schema:roleContactPoint" typeof="schema:ContactPoint">
+                    <a href="mailto:alexandra@birzu.ro"
+                    property="schema:email">alexandra@birzu.ro</a>
+                </li>
+                </ul>
+            </li>
+
+            <li typeof="sa:ContributorRole" property="schema:author">
+                <span property="schema:name">Iordache Viorel</span>
+                <ul>
+                <li property="schema:roleContactPoint" typeof="schema:ContactPoint">
+                    <a href="mailto:iordacheviorel99@gmail.com"
+                    property="schema:email">iordacheviorel99@gmail.com</a>
+                </li>
+                </ul>
+            </li>
+
+            <li typeof="sa:ContributorRole" property="schema:author">
+                <span property="schema:name">Teodorescu Alexandru</span>
+                <ul>
+                <li property="schema:roleContactPoint" typeof="schema:ContactPoint">
+                    <a href="alex.teodorescu1704@gmail.com"
+                    property="schema:email">alex.teodorescu1704@gmail.com</a>
+                </li>
+                </ul>
+            </li>
+            </ul>
+        </section>
+
+        <section typeof="infoiasi">
+            <h1>Organizatie afiliata</h1>
+            <span typeof="schema:Organization" resource="https://www.info.uaic.ro">
+                <a href="https://www.info.uaic.ro">
+                    <span property="schema:name">https://www.info.uaic.ro</span>
+                </a>
+                (<span property="schema:location" typeof="schema:Place">
+                    <span property="schema:address" typeof="schema:PostalAddress">
+                    <span property="schema:addressLocality">Facultatea de informatica</span>,
+                    <span property="schema:addressRegion">Iasi</span>,
+                    <span property="schema:addressCountry">Romania</span>
+                    </span>
+                </span>)
+                </span>
+        </section>
+
+        <section typeof="web">
+            <h3>Enuntul proiectului:</h3>
+            <p>
+                    E necesara o aplicatie Web menita a gestiona eficient tranzactiile imobiliare. Sistemul va permite managementul unor imobile spre vanzare si/sau inchiriere, inclusiv informatii precum descriere, pret, coordonatele locatiei, date de contact, starea cladirii, facilitati oferite, riscuri posibile etc. Pentru localizarea facila, se va recurge la un serviciu de cartografiere (e.g., OpenStreetMap). In plus, se va oferi si posibilitatea atasarii de straturi suplimentare pentru vizualizarea unor informatii de interes -- e.g. diversele tipuri de poluare, nivelul de aglomeratie, numarul de raportari de jafuri, costul mediu de trai, temperatura medie anuala, existenta parcarilor ori altor obiective de interes (i.e. magazine) si altele. Pentru generarea diverselor straturi se poate recurge la date agregate existente in cadrul unor platforme sociale (e.g., Twitter, Facebook). De exemplu, pentru stratul poluare fonica, se pot agrega resurse marcate cu tag-ul "#noise" ori "#smog". Utilizatorii interesati de inchirierea/cumpararea unei locuinte (e.g. apartament, casa, loc de veci etc.) vor putea efectua diverse operatiuni folosind harta pusa la dispozitie: selectarea zonei de interes pentru afisarea optiunilor existente, selectarea diverselor straturi pentru luarea deciziei, filtrare in functie de alte criterii (e.g., pret, suprafata, facilitati). Funcționalitatea va fi expusa si sub forma unui serviciu Web. Optional, se poate utiliza Geolocation API pentru furnizarea de imobile aflate in vecinatatea utilizatorului.
+            </p>
+        </section>
+
+        <section>
+            <h3>P: Prototip al interfeţei Web (săptămâna #5)</h3>
+            <ul>
+                <li>Prezentare:</li>
+                <ul>
+                    <li>In saptamana a 5-a am prezentat interfata aplicatiei, compusa din urmatoarele ecrane:</li>
+                    <ul>
+                        <li>Home</li>
+                        <li>Lista anunturi</li>
+                        <li>Anunt individual</li>
+                        <li>Logare/Inregistrare</li>
+                    </ul>
+                    <li>Am luat in considerare lipsa ecranului "Adaugare anunt".</li>
+                </ul>
+            </ul>
+        </section>
+
+        <section>
+            <h3>A: Arhitectura aplicaţiei Web (săptămâna #9)</h3>
+            <ul>
+                <li>Prezentare:</li>
+                <ul>
+                <li>Am prezentat arhitectura de ansamblu a proiectului.</li>
+                
+                <li>Am prezentat flow-ul aplicatiei prin diagrama use-case
+                    </li> 
+                <img src="diagrama1.jpg" alt="Italian Trulli">
+                <img src="diagrama2.jpg" alt="Italian Trulli">
+                
+                <li>
+                    Am prezentat structura bazei de date:
+                </li>
+                    <img src="bd.jpg" alt="Italian Trulli">
+                
+                <li>Ne-am propus sa folosim urmatoarele API-uri externe:</li>
+                <ul>
+                    <li>Overleaf</li>
+                    <li>Open Street Map</li>
+                </ul>
+            </ul>
+        </section>
+
+        <section>
+            <h3>S: Soluţia completă (în sesiune)</h3>
+            <ul>
+                <li>Intre iteratia precedenta si cea curenta:</li>
+
+                <ul>
+                    <li>Am refacut design-ul proiectului.</li>
+                    <li>Am refacut pagina de autentificare/logare.</li>
+                    <li>Am facut pagina de Adaugare Anunt care era lipsa.</li>
+                </ul>
+
+                <li>Prezentare:</li>
+                <ul>
+                    <li>Am prezentat solutia finala a proiectului, ale carui functionalitati sunt descrise in </li> <a href="https://htmlpreview.github.io/?https://github.com/iordacheviorel/TW/blob/master/ghid/ghid.html">Ghidul de utilizare al plicatiei.</a>
+                </ul>
+            </ul>
+        </section>
+
+
+        <section>
+            <h2>Management cod sursa:</h2>
+            <p>Codul sursa este disponibil pe Github la adresa:</p>
+            <a href="https://github.com/iordacheviorel/TW/">github.com/iordacheviorel/TW</a>
+            <p>Management-ul codului nu a fost realizat exclusiv pe github. Am ales sa facem push in momentul in care era realizata o functionalitate stabila, distribuind cod-sursa in prealabil prin alte metode (ex: retele de socializare).</p>
+        </section>
+
+        <!-- <section>
+            <h3>Referinte</h3>
+                <li typeof="schema:WebPage" role="doc-biblioentry"
+                resource="http://semver.org/"
+                property="schema:citation" id="some-id">
+             <cite property="schema:name">
+               <a href="http://semver.org/">Semantic Versioning 2.0.0</a>
+             </cite>,
+              by <span property="schema:author" typeof="schema:Person">
+               <span property="schema:givenName">Tom</span>
+               <span property="schema:familyName">Preston-Werner</span>
+             </span>; published in
+             <time property="schema:datePublished" datatype="xsd:gYear"
+                   datetime="2014">2014</time>
+             <span property="schema:potentialAction" typeof="schema:ReadAction">
+               <meta property="schema:actionStatus" content="CompletedActionStatus">
+                (accessed on
+               <time property="schema:endTime" datatype="xsd:date"
+                     datetime="2016-02-01">01 Feb 2016</time>)
+             </span>.
+            </li>
+        </section> -->
+
+
+    </section>
+
+
+</body>
+</html>
