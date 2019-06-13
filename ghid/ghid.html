@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ghid de utilizare</title>
+</head>
+<body>
+
+
+    <section>      
+        <h1>Ghid de utilizare</h1>
+
+        <section typeof="sa:AuthorsList">
+            <h2>Authors</h2>
+            <ul>
+            <li typeof="sa:ContributorRole" property="schema:author">
+                <span property="schema:name">Bîrzu Alexandra</span>
+                <ul>
+                <li property="schema:roleContactPoint" typeof="schema:ContactPoint">
+                    <a href="mailto:alexandra@birzu.ro"
+                    property="schema:email">alexandra@birzu.ro</a>
+                </li>
+                </ul>
+            </li>
+
+            <li typeof="sa:ContributorRole" property="schema:author">
+                <span property="schema:name">Iordache Viorel</span>
+                <ul>
+                <li property="schema:roleContactPoint" typeof="schema:ContactPoint">
+                    <a href="mailto:iordacheviorel99@gmail.com"
+                    property="schema:email">iordacheviorel99@gmail.com</a>
+                </li>
+                </ul>
+            </li>
+
+            <li typeof="sa:ContributorRole" property="schema:author">
+                <span property="schema:name">Teodorescu Alexandru</span>
+                <ul>
+                <li property="schema:roleContactPoint" typeof="schema:ContactPoint">
+                    <a href="alexandra@birzu.ro"
+                    property="schema:email">alexandra@birzu.ro</a>
+                </li>
+                </ul>
+            </li>
+            </ul>
+        </section>
+
+        <section>
+            <span typeof="schema:Organization" resource="https://www.info.uaic.ro">
+                <a href="https://www.info.uaic.ro">
+                    <span property="schema:name">https://www.info.uaic.ro</span>
+                </a>
+                (<span property="schema:location" typeof="schema:Place">
+                    <span property="schema:address" typeof="schema:PostalAddress">
+                    <span property="schema:addressLocality">Facultatea de informatica</span>,
+                    <span property="schema:addressRegion">Iasi</span>,
+                    <span property="schema:addressCountry">Romania</span>
+                    </span>
+                </span>)
+                </span>
+        </section>
+
+        <section>
+            <h5>Referinte</h5>
+                <li typeof="schema:WebPage" role="doc-biblioentry"
+                resource="http://semver.org/"
+                property="schema:citation" id="some-id">
+             <cite property="schema:name">
+               <a href="http://semver.org/">Semantic Versioning 2.0.0</a>
+             </cite>,
+              by <span property="schema:author" typeof="schema:Person">
+               <span property="schema:givenName">Tom</span>
+               <span property="schema:familyName">Preston-Werner</span>
+             </span>; published in
+             <time property="schema:datePublished" datatype="xsd:gYear"
+                   datetime="2014">2014</time>
+             <span property="schema:potentialAction" typeof="schema:ReadAction">
+               <meta property="schema:actionStatus" content="CompletedActionStatus">
+                (accessed on
+               <time property="schema:endTime" datatype="xsd:date"
+                     datetime="2016-02-01">01 Feb 2016</time>)
+             </span>.
+            </li>
+        </section>
+
+        <section>
+          <h3>Landing Page</h3>
+          <figure typeof="image">
+            <img src="home.png" style="width: 700px">
+          </figure>
+          <p>Aici, orice utilizator poate cauta anunturi, in schimb, pentru a adauga sau a salva anunturi, utilizatorii trebuie sa se logheze.</p>
+        </section>
+        <section>
+          <h3>Login/Register Page</h3>
+          <figure typeof="image">
+            <img src="login.png" style="width: 700px">
+          </figure>
+          <p>Atat pentru inregistrare cat si pentru conectare, se va completa un formular ce contine numele utilizatorului si parola acestuia. Dupa inregistrare se va primi un mesaj de confimare cu privire la informatiile clientului care au fost stocate in baza de date, iar dupa conectare, se va primi un mesaj de bun venit, urmand ca utilizatorul sa poata beneficia de toate serviciile aplicatiei.</p>
+          <figure typeof="image">
+            <img src="logged.png" style="width: 700px">
+          </figure>
+        </section>
+        <section>
+          <h3>Cautare Anunt</h3>
+          <figure typeof="image">
+            <img src="search.png" style="width: 700px">
+          </figure>
+          <p>Clientul va scrie in bara de search, denumirea unui oras/cartier unde este interesat sa gaseasca anunturi. In dropdown-menu sunt afisate, via Ajax, sugestii pentru cautarea dorita.</p>
+        </section>
+
+          <section>
+            <h3>Anunturi</h3>
+            <figure typeof="image">
+              <img src="anunt1.png" style="width: 700px">
+            </figure>
+            <figure typeof="image">
+              <img src="anunt2.png" style="width: 700px">
+            </figure>
+            <p>Clientul va apasa search in dreptul anuntului dorit, iar acesta ii va putea vizualiza locatia pe harta (in cazul de fata, coordonatele sunt inregistrate random in baza de date), cat si alte detalii date de catre autorul anuntului.
+  
+              De asemenea, in josul paginii clientul dispune de o serie de anunturi, avand similaritati in ceea ce priveste pretul, locatia, nr de camere etc.</p>
+              <figure typeof="image">
+                <img src="anunt3.png" style="width: 700px">
+              </figure>
+            </section>
+
+            <section>
+              <h3>Sortare anunturi</h3>
+              <figure typeof="image">
+                <img src="sort.png" style="width: 700px">
+              </figure>
+              
+              <p>Aceasta pagina pune la dispozitie sortarea anunturilor dupa anumite criterii. O data apasat butonul ,,cauta,, , utilizatorul va putea vizualiza pozitiile anunturilor pe harta. 
+                Astfel, mutand cursorul pe marcatorul locatiei anuntului dorit, acesta va putea fi directionat catre anunt (facand click pe casuta ,,vezi locuinta,,).</p>
+                
+              </section>
+              <section>
+                <h3>Adaugare anunturi</h3>
+                <figure typeof="image">
+                  <img src="add.png" style="width: 700px">
+                </figure>
+                
+                <p>
+                  Clientul care doreste sa adauge un anunt, va trebui sa completeze toate campurile obligatorii, anuntul sau fiind adaugat in baza noasta de date si devenind public.</p>
+                  
+                </section>
+
+          
+
+    </section>
+
+  
+
+</body>
+</html>
